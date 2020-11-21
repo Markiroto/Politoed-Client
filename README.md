@@ -5,7 +5,7 @@ A Client that is made for Minecraft Bedrock Edition.
 Politoed Client is a client made for Minecraft Bedrock Edition or Minecraft Pocket Edition designed for PVP!
 
 # Release cycles
-Politoed Client's release cycle is similar to the Linux Distrobution Debian and it has 3 versions.
+Politoed Client's release cycle is similar to the Linux Distro Debian Gnu/Linux and it has 3 versions.
 
 - Stable Release
 The Stable Release is the Stable version of Politoed Client and the update cycle is very slow. An update may come when we have think that a release is stable enough
