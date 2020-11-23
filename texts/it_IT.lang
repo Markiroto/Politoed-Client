@@ -1,0 +1,5 @@
+﻿//Setting Panels
+panel.player=Giocatore
+panel.graphics=Grafica
+panel.video=Video Avanzato
+panel.info=Informazione

@@ -1,0 +1,27 @@
+﻿//Setting Panels
+panel.player=Prehrávač
+panel.graphics=Grafika
+panel.video=Pokročilé Video
+panel.info=Informácie
+
+//Changelog
+text.changelog1=§aAdd-on Info
+text.changelog2=Build: 2.0.3
+text.changelog6=-Hide HUD and Hide Hand are easier to access like Third Person
+text.changelog7=-Added screen animations toggle!
+text.changelog8=-Added some language support! (Player, Graphics, Andvanced video panels only for now)
+text.changelog10=-Report bugs/feedback on twitter @NetherNinja
+
+//Custom Options
+toggle.more_info=More Info
+
+//More Info
+text.info1=This UI settings pack is a WIP (work in progress), so always be expecting new updates, changes, switches, and more features as Minecraft updates come out more and more.
+text.info2=This UI settings pack was inspired by the feedback of Minecraft bedrock as a whole, this ui pack has gone through alot, from very few features to many name changes like time saver, or quick settings. Once again please give me feedback on my ui pack, It'll help for future updates.
+
+//Dividers
+text.divide1=§aCreator Info:
+text.divide2=Changelog:
+text.divide3=INFO:
+text.divide4=HISTORY:
+space.spacer= 

@@ -1,0 +1,8 @@
+{
+  "namespace": "horse",
+
+  "renderer_bg": {
+    "texture": "textures/ui/player_preview_border"
+  }
+}
+

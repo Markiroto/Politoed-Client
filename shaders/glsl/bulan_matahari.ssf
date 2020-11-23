@@ -1,0 +1,77 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+
+#include "fragmentVersionCentroid.h"
+
+#if __VERSION__ >= 300
+
+#if defined(TEXEL_AA) && defined(TEXEL_AA_FEATURE)
+_centroid in highp vec2 uv;
+#else
+_centroid in vec2 uv;
+#endif
+
+#else
+
+varying vec2 uv;
+
+#endif
+
+#include "uniformShaderConstants.h"
+#include "util.h"
+#include "uniformPerFrameConstants.h"
+
+uniform sampler2D TEXTURE_0;
+
+varying highp vec3 pos;
+
+float pent(vec2 p){    
+vec2 q = abs(p);
+return max(max(q.x*1.176-p.y*0.385, q.x*0.727+p.y), -p.y*1.237)*1.;}
+
+vec3 flare(vec2 p, vec2 pos){vec2 q = (p-pos);
+vec2 pds = p*(length(p))*0.75;
+float a = atan(q.x,q.y);
+float rz = (pow(abs(fract(a*.8+.12)-0.5),3.)*(-dot(q,q)*4.));
+rz += max(1.0/(1.0+32.0*pent(pds+0.8*pos)),.0)*00.2;
+vec2 p2 = mix(p,pds,-.5);
+rz += max(0.01-pow(pent(p2 + 0.4*pos),2.2),.0)*3.0;
+//rz += max(0.01-pow(pent(p2 + 0.2*pos),5.5),.0)*3.0;	
+//rz += max(0.01-pow(pent(p2 - 0.1*pos),1.6),.0)*4.0;
+//rz += max(0.01-pow(pent(-(p2 + 1.*pos)),2.5),.0)*5.0;
+//rz += max(0.01-pow(pent(-(p2 - .5*pos)),2.),.0)*4.0;
+rz += max(0.01-pow(pent(-(p2 + .7*pos)),5.),.0)*3.0;
+return vec3(clamp(rz,0.,1.));}
+
+void main()
+{
+vec3 pos_n = normalize(pos.xyz);
+
+#if !defined(TEXEL_AA) || !defined(TEXEL_AA_FEATURE)
+	vec4 diffuse = texture2D( TEXTURE_0, uv-vec2(-pos.x*0.5,pos.z)*5.);
+#else
+	vec4 diffuse = texture2D_AA(TEXTURE_0, uv );
+#endif
+
+vec4 fogc =FOG_COLOR;
+vec4 sfc =max(fogc,vec4(1.0));
+
+float hujan =pow(FOG_CONTROL.y,5.0);
+
+#ifdef ALPHA_TEST
+	if(diffuse.a < 0.5)
+		discard;
+#endif
+
+float silau = 1.-pow(length(pos*5.),.5*(pow(fogc.g,5.))+(1.-fogc.b)*.1);
+
+vec4 silauan = vec4(vec3(sfc.r*.9,1.65-fogc.b,1.2-fogc.b),min(max(silau*hujan,.0),1.));
+silauan.rgb += vec3(.7,.7,.4)*max(max(flare(pos.zy/pos.x,-pos.zy/pos.x),0.),0.);
+
+float lingkaran =max(1.-pow(length(pos*60.5),9.),0.);
+float notex;
+if(lingkaran>0.){notex = 1.;}
+
+gl_FragColor = CURRENT_COLOR*mix(silauan,diffuse,notex);
+
+}

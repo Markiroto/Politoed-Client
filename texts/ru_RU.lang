@@ -1,0 +1,5 @@
+﻿//Setting Panels
+panel.player=игрок
+panel.graphics=Графика
+panel.video=Расширенное видео
+panel.info=Информация

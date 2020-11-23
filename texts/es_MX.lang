@@ -1,0 +1,27 @@
+﻿//Setting Panels
+panel.player=Jugador
+panel.graphics=Gráficos
+panel.video=Video avanzado
+panel.info=Información
+
+//Changelog
+text.changelog1=§aAdd-on Info
+text.changelog2=Construir: 3.1.0
+text.changelog6=-Ocultar HUD y Hide Hand son más fáciles de acceder como Third Person
+text.changelog7=-Animaciones de pantalla añadidas alternar!
+text.changelog8=-¡Agregó un poco de soporte de idiomas!
+text.changelog10=-Report bugs/feedback on twitter @NetherNinja
+
+//Custom Options
+toggle.more_info=More Info
+
+//More Info
+text.info1=Este paquete de configuración de UI es un WIP (trabajo en progreso), por lo que siempre se esperan nuevas actualizaciones, cambios, interruptores y más funciones a medida que las actualizaciones de Minecraft salen cada vez más.
+text.info2=Este paquete de configuraciones de interfaz de usuario se inspiró en los comentarios de Minecraft bedrock como un todo, este complemento ha pasado por muchas cosas, desde muy pocas funciones hasta muchos cambios de nombre, como el ahorro de tiempo o la configuración rápida. Una vez más, por favor, denme su opinión sobre mi complemento, lo ayudará con futuras actualizaciones.
+
+//Dividers
+text.divide1=§aCreador Info:
+text.divide2=Registro de cambios:
+text.divide3=Info:
+text.divide4=Historia:
+space.spacer= 
