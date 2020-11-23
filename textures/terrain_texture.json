@@ -1,0 +1,21 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "missing": {
+      "textures": "textures/misc/missing_texture"
+    },
+    "double_plant_carried": {
+      "textures": [
+        "textures/blocks/double_plant_sunflower_bottom",
+        "textures/blocks/double_plant_syringa_bottom",
+        "textures/blocks/double_plant_grass_bottom",
+        "textures/blocks/double_plant_fern_bottom",
+        "textures/blocks/double_plant_rose_bottom",
+        "textures/blocks/double_plant_paeonia_bottom"
+      ]
+    }
+  }
+}

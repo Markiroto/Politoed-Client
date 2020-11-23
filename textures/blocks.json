@@ -1,0 +1,38 @@
+{
+   "diamond_ore" : {
+      "sound" : "stone",
+      "textures" : "diamond_ore"
+   },
+   "coal_ore" : {
+      "sound" : "stone",
+      "textures" : "coal_ore"
+   },
+   "emerald_ore" : {
+      "sound" : "stone",
+      "textures" : "emerald_ore"
+   },
+   "gold_ore" : {
+      "sound" : "stone",
+      "textures" : "gold_ore"
+   },
+   "iron_ore" : {
+      "sound" : "stone",
+      "textures" : "iron_ore"
+   },
+   "lapis_ore" : {
+      "sound" : "stone",
+      "textures" : "lapis_ore"
+   },
+   "nether_gold_ore" : {
+      "sound" : "stone",
+      "textures" : "nether_gold_ore"
+   },
+   "redstone_ore" : {
+      "sound" : "stone",
+      "textures" : "redstone_ore"
+   },
+   "quartz_ore" : {
+      "sound" : "stone",
+      "textures" : "quartz_ore"
+   }
+}
