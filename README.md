@@ -16,3 +16,5 @@ The Testing Release is the Testing version of Politoed Client and an update usua
 - Experimental Release
 The Experimental Release is the Experimental version of Politoed Client and an update comes when a patch comes. It's not very stable and if you use the Experimental Release you will expect bugs. 
 
+# Screenshot
+https://media.discordapp.net/attachments/752711912898429079/779640711234584597/Screenshot_20201118-114454.png?width=847&height=476
