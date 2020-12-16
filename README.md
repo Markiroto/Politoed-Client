@@ -20,6 +20,7 @@ The Experimental Release is the Experimental version of Politoed Client and an u
 ![Politoed Client Screenshot](PWmV3wp.png)
 
 # Credis
-StartScreen made from Netherninja's Bedrocktomize
-Dark theme by OffRoaders123
-and Mojang for making an incredible default texture pack.
+- StartScreen made from Netherninja's Bedrocktomize
+- Dark theme by OffRoaders123
+and 
+- Mojang for making an incredible default texture pack.
